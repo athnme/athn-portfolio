@@ -9894,7 +9894,148 @@ h3 {
   }
 }
 body {
-  margin: 20px;
+  background-color: gray;
+  background: radial-gradient(100% 100% at 0% 0%, #808080 0%, #1a1a1a 100%);
+}
+
+.interface {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: block;
+  z-index: 20;
+  color: #d8d8d8;
+}
+
+a {
+  color: #d8d8d8;
+}
+
+h2 {
+  font-size: 10em;
+}
+
+.nav {
+  padding: 30px calc(100% / 12 - 16px);
+  width: 100%;
+  height: 92px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-elements {
+  height: 32px;
+}
+
+#menu-horizontal {
+  display: flex;
+  min-width: 406px;
+  justify-content: space-between;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.social-media {
+  padding: 30px 0;
+  height: 138px;
+  width: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+  position: absolute;
+  right: calc(100% / 12 - 12px);
+  top: calc(50% - 69px);
+}
+
+.work-section {
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  display: grid;
+}
+
+.article-container {
+  grid-row: 1;
+  grid-column: 1;
+  height: calc(100% - 92px);
+  margin: 92px calc(100% / 6) 0;
+}
+
+.article {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr) 92px;
+}
+
+.article-title {
+  grid-column: 1/4;
+  grid-row: 3/7;
+  position: relative;
+  z-index: 15;
+  font-family: serif;
+}
+
+.article-h2 {
+  position: absolute;
+  bottom: 0;
+}
+
+.article-link {
+  grid-column: 4;
+  grid-row: 6;
+  padding-left: 32px;
+  position: relative;
+}
+
+.article-a {
+  position: absolute;
+  bottom: 0;
+}
+
+.background-image-container {
+  grid-column: 2/5;
+  grid-row: 2/7;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  z-index: -1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 30px 85px 58px rgba(0, 0, 0, 0.29), 15px 36.7993px 34.3154px rgba(0, 0, 0, 0.273811), 7px 17.7492px 30.5696px rgba(0, 0, 0, 0.239536);
+}
+
+.background-image {
+  background-color: indigo;
+  object-fit: cover;
+}
+
+.hero-image-container {
+  grid-column: 1/5;
+  grid-row: 1/8;
+  z-index: 10;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  object-fit: cover;
+}
+
+.work-color {
+  grid-row: 1;
+  grid-column: 1;
+  background-color: #c62300;
+  mix-blend-mode: overlay;
+  z-index: -10;
 }
 
 /*# sourceMappingURL=custom.css.map */
